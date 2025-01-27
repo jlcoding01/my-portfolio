@@ -1,1 +1,13 @@
-<p>projects works!</p>
+<div class="flex h-96 overflow-hidden gap-[60px] min-h-[80vh] lg:flex-row">
+  <div
+    *ngFor="let image of images; let i = index"
+    class="flex-1 bg-cover bg-center transition-all duration-700 ease-[cubic-bezier(.19,1,.22,1)] max-h-[40vh] mt-[50px] mb-[40px] rounded-xl cursor-open"
+    [ngClass]="{
+      'flex-[4]': activeIndex === i,
+      'flex-[2]': activeIndex !== i,
+      'opacity-70': activeIndex !== i
+    }"
+    (mouseenter)="setActiveIndex(i)"
+    [style.background-image]="'url(' + image + ')'"
+  ></div>
+</div>
