@@ -1,11 +1,15 @@
 <div class="hero bg-transparant min-h-[80vh]">
-  <div class="hero-content text-center">
-    <div class="max-w-md">
-      <h1 class="text-7xl font-bold">Hello there</h1>
-      <p class="py-7">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-        excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-        id nisi.
+  <div class="hero-content">
+    <div class="max-w-2xl">
+      <h1 class="text-6xl font-bold">
+        <span class="text-gray-800">I'm a </span>
+        <span [ngClass]="currentClass">{{ currentText }}</span>
+      </h1>
+      <p class="py-7 text-lg">
+        I bring ideas to life with efficient code and innovative solutions.
+        Beyond coding, I embrace the mindset of an Entrepreneur, constantly
+        exploring new opportunities to create impactful products. Let's build
+        something extraordinary together.
       </p>
     </div>
   </div>
