@@ -4,3 +4,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes wavy {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.animate-wavy {
+  animation: wavy 1.5s ease-in-out infinite;
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+  50% {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+}
+.animate-neon {
+  animation: neon 1.5s infinite alternate;
+}
