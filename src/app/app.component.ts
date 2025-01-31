@@ -8,6 +8,7 @@ import { AboutComponent } from './pages/about/about.component';
 
 @Component({
   selector: 'app-root',
+  standalone:true,
   imports: [ NavBarComponent, HomeComponent, ProjectsComponent, AboutComponent, FooterComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

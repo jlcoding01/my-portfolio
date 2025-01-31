@@ -1,12 +1,11 @@
 <div class="min-h-screen bg-[rgb(235,235,235)] p-8">
   <div class="max-w-7xl mx-auto">
-    <app-nav-bar></app-nav-bar>
+    <app-nav-bar id="main"></app-nav-bar>
     <app-home></app-home>
-    <app-projects></app-projects>
-    <!-- <div class="divider"></div> -->
-    <app-about></app-about>
+    <app-projects id="projects"></app-projects>
+    <div class="divider"></div>
+    <app-about id="about"></app-about>
     <app-footer></app-footer>
   </div>
 </div>
-
 <router-outlet />

@@ -6,8 +6,10 @@
 <div
   class="flex flex-col md:flex-row h-auto md:h-[70vh] overflow-hidden gap-4 md:gap-[60px] min-h-[100vh] md:min-h-[80vh]"
 >
-  <div
+  <a
     *ngFor="let image of images; let i = index"
+    [href]="imageLinks[i]"
+    target="_blank"
     class="flex-1 bg-cover bg-center transition-all duration-700 ease-[cubic-bezier(.19,1,.22,1)] h-48 md:min-h-[40vh] lg:h-[50vh] mt-4 md:mt-[50px] mb-4 md:mb-[40px] rounded-xl cursor-open relative"
     [ngClass]="{
       'flex-[4]': activeIndex === i && !isSmallScreen,
@@ -29,13 +31,13 @@
     >
       {{ imageTexts[i] }}
     </div>
-  </div>
+  </a>
 </div>
-<h2
+<!-- <h2
   class="text-3xl md:text-2xl font-semibold text-center mt-12 md:mt-16 animate-wavy"
 >
   Essential Skills
-</h2>
+</h2> -->
 <div
   class="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10 mt-10 mb-20 md:mt-16 px-4"
 >

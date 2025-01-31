@@ -10,14 +10,20 @@ import { CommonModule } from '@angular/common';
 
 export class ProjectsComponent {
   images = [
-    'assets/1.jpg',
-    'assets/2.jpg',
-    'assets/3.jpg',
+    'assets/wtwr.jpg',
+    'assets/news.jpg',
+    'assets/around.jpg',
   ];
   imageTexts = [
     "What To Wear App",
     "News Explorer",
-    "Upcoming",
+    "Around the US",
+  ]
+
+  imageLinks =[
+    "https://github.com/jlcoding01/se_project_react",
+    "https://newsexplorerapp.jumpingcrab.com/",
+    "https://jlcoding01.github.io/se_project_aroundtheus/",
   ]
 
   logos =[
