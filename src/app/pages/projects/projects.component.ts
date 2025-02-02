@@ -21,7 +21,7 @@ export class ProjectsComponent {
   ]
 
   imageLinks =[
-    "https://github.com/jlcoding01/se_project_react",
+    "https://wtwr.showmyhomes.com/",
     "https://newsexplorerapp.jumpingcrab.com/",
     "https://jlcoding01.github.io/se_project_aroundtheus/",
   ]
