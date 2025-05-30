@@ -5,28 +5,19 @@ import { CommonModule } from '@angular/common';
   selector: 'app-projects',
   imports: [CommonModule],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrl: './projects.component.css',
 })
-
 export class ProjectsComponent {
-  images = [
-    'assets/wtwr.jpg',
-    'assets/news.jpg',
-    'assets/around.jpg',
+  images = ['assets/wtwr.jpg', 'assets/news.jpg', 'assets/around.jpg'];
+  imageTexts = ['What To Wear App', 'News Explorer', 'Around the US'];
+
+  imageLinks = [
+    'https://wtwr-lake.vercel.app/',
+    'https://news-explorer-frontend-umber.vercel.app/',
+    'https://jlcoding01.github.io/se_project_aroundtheus/',
   ];
-  imageTexts = [
-    "What To Wear App",
-    "News Explorer",
-    "Around the US",
-  ]
 
-  imageLinks =[
-    "https://wtwr.showmyhomes.com/",
-    "https://newsexplorerapp.jumpingcrab.com/",
-    "https://jlcoding01.github.io/se_project_aroundtheus/",
-  ]
-
-  logos =[
+  logos = [
     'assets/react.svg',
     'assets/angular.svg',
     'assets/javascript.svg',
@@ -45,7 +36,7 @@ export class ProjectsComponent {
     'assets/postman.svg',
     'assets/postgresql.svg',
     'assets/mysql.svg',
-  ]
+  ];
 
   activeIndex = 0;
   isSmallScreen: boolean = false;
